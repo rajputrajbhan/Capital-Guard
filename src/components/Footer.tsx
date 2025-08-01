@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Separator } from '@/components/ui/separator';
 import { Calculator, FileText, Shield, ExternalLink } from 'lucide-react';
+import CapitalGuard from "../assets/CapitalGuard.png"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,7 +13,13 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <Calculator className="h-5 w-5 text-primary" />
+              <img
+              src={CapitalGuard}
+              alt="CapitalGuard"
+              width={70}
+              height={70}
+              loading="lazy"
+            />
               <h3 className="font-bold text-lg text-foreground">Capital Guard</h3>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">

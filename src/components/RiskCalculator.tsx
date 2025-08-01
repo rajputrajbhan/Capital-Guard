@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Calculator, TrendingUp, Shield, DollarSign, Target, AlertTriangle } from 'lucide-react';
+import CapitalGuard from "../assets/CapitalGuard2.png"
 
 interface CalculationResult {
   tradeCapital: number;
@@ -58,7 +59,13 @@ const RiskCalculator = () => {
           {/* Header */}
           <div className="text-center space-y-2">
             <div className="flex items-center justify-center gap-2 mb-4">
-              <Calculator className="h-8 w-8 text-primary" />
+              <img
+              src={CapitalGuard}
+              alt="CapitalGuard"
+              width={70}
+              height={70}
+              loading="lazy"
+            />
               <h1 className="text-4xl font-bold text-foreground">Capital Guard</h1>
             </div>
             <p className="text-lg text-muted-foreground">Professional Risk Management Calculator</p>
